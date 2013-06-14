@@ -1,0 +1,345 @@
+/*	................................................................
+		author: 		Aleem Latif
+ 		script file: 	CSS styles for Reviews Listing Page - Demo 		
+.................................................................. */
+/*****
+* Main
+*****/
+
+html, body {
+	height: 100%;/* Necessary to make sure that the page footer is displayed at the bottom */
+}
+
+html {
+  font-size: 25%;/*= 4px,
+		_ Assuming that the browser font-size is 16px
+		_ It's necessary to make it easier to convert the font-size to 13px in IE (because the em precision is only 2 decimals */
+}
+/**
+* Condottedate styles on HTML elements for all browsers
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	/* Defining the default font */
+  	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3.25em;
+	line_height: 1.5em;
+	color: #333;
+	background_color: #FFFFFF!important;
+	
+}
+
+a, a:visited, a:focus, a:active {
+  	color:#00AEEF;
+	text-decoration:none;
+	outline-style:none;
+	cursor:pointer;
+}
+
+a:hover {
+  color:#00AEEF;
+  text-decoration:none;
+}
+
+
+img {
+  border: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line_height: 1em;
+}
+p {
+  margin: 0 0;
+  line_height: 1.5em;/*= 19.5px */
+}
+ul, ol {
+  padding: 0;
+  margin: 0;  
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+}
+
+li {
+  padding: 0;
+  margin: 0;  
+}
+blockquote	{
+	padding: 0;
+  	margin: 0; 
+}
+.bold	{
+	font-weight: bold;
+}
+/*	==================================================================================	*/
+/*	define class & ids specific rules	*/
+.page_container {
+  position: relative;
+  min_height: 100%;/* ensures that the footer appears at the bottom of the page */  
+  margin: 0em auto;
+}
+
+.body_wrapper {
+	padding:1.25em 0 2.077em;
+	position:relative;
+	width:100%;
+}
+
+.body_wrapper .page_body {
+	margin:auto;	
+	width:80%;	
+}
+.page_body .reviews_block	{
+	width: 650px;
+	margin:auto;
+	color:#848484;	
+}
+.reviews_block .header {		
+	padding:0;
+	width:100%;
+	margin-bottom:5px;
+	border-bottom:1px dotted #DDDDDD;		
+}
+
+.reviews_block .header h1 {
+	float:left;
+	font-size:1.2em;
+	font-weight:bold;
+	
+}
+
+.reviews_block .header .arrow_butt_large {
+	float:right;	
+	font-weight:bold;	
+	margin-bottom:3px;	
+}
+p.arrow_butt_large a	{
+	background:transparent url(../images/tl_butt_arrow_lrg.gif) no-repeat scroll 100% 0;
+	color:#575757 !important;
+	float:left;
+	padding-right:14px;
+	height:22px;
+}
+p.arrow_butt_large em {
+	background:transparent url(../images/bg_butt_lrg.gif) no-repeat scroll 0 0;
+	float:left;
+	font-size:0.95em;
+	font-style:normal;
+	font-weight:bold;
+	height:22px;
+	line-height:15px;
+	margin-left:0;
+	padding:4px 7px 0;
+}
+.review_item 	{
+	margin :15px 0;
+	border-bottom:1px dotted #DDDDDD;
+	padding-bottom: 15px;
+}
+
+.review_item .light_grey{
+	color:#A5A5A5;	
+}
+.review_item .dark_grey {
+	color:#666666;	
+}
+.review_item .r_col_lhs	{
+	float: left;
+	width: 60px;	
+}
+.review_item .r_col_rhs	{
+	float:right;
+	margin:0 0 0 -60px;
+	width:100%;	
+}
+.review_item .r_col_rhs .r_col_rhs_inner	{	
+	margin-left: 62px;	
+}
+
+.review_item .r_head	p {
+	float:left;
+	font-size: 0.9em;
+}
+.review_item .r_head	a {
+	font-weight: bold;
+	font-size: 1.0em;
+}
+.review_item .r_head	.r_rating {
+	float:left;
+	margin-left: 5px;
+	background-image: url(../images/tl_rate.jpg);
+	display:block;
+	width: 69px;
+	height: 13px;
+	margin-right:5px;
+}
+.review_item .r_head	.r_rating span{
+	display:none;
+}
+.review_item .r_quote	{
+	margin: 3px 0;
+	padding: 0;
+}
+.review_item .r_quote blockquote {
+	font-size:0.95em;
+	line-height:1.2em;
+	padding:5px 0 0 22px;
+	width:auto;
+	background-image: url(../images/tl_quote_small.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.review_item  .r_tools {
+	padding: 5px 0 5px 22px;
+	position:relative;
+}
+.review_item  .r_tools ul li {
+	float:left;
+	margin-right:5px;
+}
+p.arrow_butt_small {	
+	font-weight:normal;	
+	margin-bottom:3px;	
+}
+p.arrow_butt_small a	{
+	background:transparent url(../images/tl_butt_arrow_small_right.gif) no-repeat scroll 100% 0;
+	color:#575757 !important;
+	float:left;
+	padding-right:14px;
+	height:17px;
+}
+p.arrow_butt_small em {
+	background:transparent url(../images/bg_butt_small.gif) no-repeat scroll 0 0;
+	float:left;
+	height:17px;		
+	padding:1px 3px;	
+	font-weight: normal;
+	font-style:normal;
+	font-size: 0.9em;
+}
+.r_tools ul li.rate_review	{
+	float:right;
+	margin-right:0;
+	position:relative;
+	top:-10px;
+	color:#848484;
+}
+.r_tools ul li.rate_review p {
+	float:left;
+	line-height:18px;
+	margin:0 5px;
+	padding:0;
+	font-style:normal;
+}
+
+.r_tools ul li.rate_review ul.rate_icons {
+	position:static;
+	top:0;
+	float:left;
+	height:20px;	
+	width:50px;
+}
+
+.r_tools ul li.rate_review ul.rate_icons li a {
+	display:block;
+	height:18px;
+	text-indent:-9999em;
+	width:20px;
+}
+.r_tools ul li.rate_review ul.rate_icons li {
+	margin:0;
+}
+a.tl_thumb_up	{
+	background:transparent url(../images/tl_thub_up.jpg) no-repeat scroll 0 0;
+}
+a.tl_thumb_down {
+	background:transparent url(../images/tl_thub_down.jpg) no-repeat scroll 0 0;
+}
+
+.comments_block  {
+	color:#666666;
+	font-size: 0.95em;
+}
+.comments_block  .up_arrow_bg	{
+	background:transparent url(../images/comments_top_arrow.gif) no-repeat scroll 5% 100%;
+	height: 9px;
+	padding:0;
+	margin: 0;	
+}
+.comments_block .comments_lvl_1 {
+	background:#E3F1F8;
+	border-bottom:1px dotted #DDDDDD;
+}
+.comments_block .comments_lvl_2 {
+	background:transparent url(../images/tl_quote_large_comments.gif) no-repeat scroll 100% 0;
+	padding:6px 70px 10px 5px;
+	position:relative;
+}
+.comments_block .comments_lvl_2 p {
+	margin: 2px 7px;
+	color: 000000;
+}
+.comments_block .comments_lvl_2 span {
+	color: cccccc;
+}
+.comments_block .comments_lvl_2 blockquote {
+	font-size:0.95em;
+	line-height:1.2em;
+	padding:5px 0 0 22px;
+	width:auto;
+	background-image: url(../images/tl_quote_small_commets.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+
+/* footer */
+.footer_wrapper	{	
+	left:0;
+	bottom:0;
+	position:absolute;
+	width:100%;
+	border_top: 1px dotted #999999;
+	text-align:center;
+}
+
+.page_footer {
+	margin:auto;	
+	width:80%;
+	color:#333333;
+	font-weight:normal;
+	
+}
+/*******************************************************************************
+* Generic Classes
+*******************************************************************************/
+/**
+* clearfix as explained in http://www.positioniseverything.net/easyclearing.html
+*/
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline_block;
+}
+/* hides from ie_mac \*/
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
